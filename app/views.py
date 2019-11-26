@@ -22,3 +22,4 @@ def datas(x):
         body += '<tr>'+rows+'</tr>'
     body +='</table></html>'   
     return body
+ 
