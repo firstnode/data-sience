@@ -6,9 +6,6 @@ def home(name):
         with open(name+'.csv', 'r') as csvFile:
             return datas(csvFile)
  
-
-
-
 def datas(x):
     body='<html><table>'
     reader = csv.DictReader(x)
@@ -22,4 +19,3 @@ def datas(x):
         body += '<tr>'+rows+'</tr>'
     body +='</table></html>'   
     return body
- 
